@@ -97,57 +97,60 @@ footer{
   margin-right: 2%;
 
 }
-
 .media{
   display: flex;
   flex-direction: row;
   align-items: center;  
 }
 
-@media screen and (min-width: 340px)and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width:767px){
+  body,html{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height:auto;
+  }
 
   .container{  
     height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    width: 100vw;    
     transform: translate(-50%,-50%);
     text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;  
+    color: white;    
   }
-
+  footer{ 
+    width: 100vw;
+    height: 90px;
+    margin-bottom: 15%;   
+    background: none;
+    }
   .footer{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: 2%;  
-  }
+    flex-direction: column;     
+  } 
   .footer img{
-    width: 80px;
+    width: 80px; 
     height: 30px;
   }
-
   .by{
-    font-size: 14px;
+    font-size: 1.1rem;
   }
-
-  .media{
+  .media{  
+    padding-left: 2em;  
     color: white;
     display: flex;
-    flex-wrap: wrap;    
-    align-items: center;  
+    flex-direction: column;       
+  }
+  .media p{
+    font-size: 1.1rem;
+   margin:0;    
   }
   .container h1{
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Philosopher', sans-serif;
-    margin: 0px;
-    letter-spacing: 10px;
+    margin-top: 25%;
+    letter-spacing: 2px;
   }
   .container h2{
     margin: 0;
@@ -175,14 +178,182 @@ footer{
     margin-top: 14px;
   }
   .prez{
-    font-family: 'Philosopher', sans-serif;
-   
+    font-family: 'Philosopher', sans-serif;   
     color:white;
     font-size: 18px;
     text-align: center;
     line-height: 25px;
     
   }
+  @media screen and (min-width: 768px) and (max-width:980px){
+    body,html{
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height:auto;
+    }
+  
+    .container{  
+      height: 100vh;
+      width: 100vw;    
+      transform: translate(-50%,-50%);
+      text-align: center;
+      color: white;    
+    }
+    footer{ 
+      width: 100vw;
+      height: 90px;
+      margin-bottom: 15%;   
+      background: none;
+      }
+    .footer{
+      display: flex;
+      flex-direction: column;     
+    } 
+    .footer img{
+      width: 80px; 
+      height: 30px;
+    }
+    .by{
+      font-size: 1.1rem;
+    }
+    .media{  
+      padding-left: 2em;  
+      color: white;
+      display: flex;
+      flex-direction: column;       
+    }
+    .media p{
+      font-size: 1.1rem;
+     margin:0;    
+    }
+    .container h1{
+      text-transform: uppercase;
+      font-size: 35px;
+      font-family: 'Philosopher', sans-serif;
+      margin-top: 25%;
+      letter-spacing: 2px;
+    }
+    .container h2{
+      margin: 0;
+      font-family: 'Philosopher', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      font-style: oblique;
+    }
+    .count{
+      margin: 20px 0;
+    }
+    .countd{
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 2px solid;
+      margin: 0 10px;
+      font-size: 5px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .countd span{
+      display: block;
+      font-size: 20px;
+      margin-top: 14px;
+    }
+    .prez{
+      font-family: 'Philosopher', sans-serif;   
+      color:white;
+      font-size: 18px;
+      text-align: center;
+      line-height: 25px;
+      
+    }
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 3),
+                    only screen and (min--moz-device-pixel-ratio: 3),
+                    only screen and (-o-min-device-pixel-ratio: 3/1),
+                    only screen and (min-device-pixel-ratio: 3) {
+    body,html{
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height:auto;
+    }
+  
+    .container{  
+      height: 100vh;
+      width: 100vw;    
+      transform: translate(-50%,-50%);
+      text-align: center;
+      color: white;    
+    }
+    footer{ 
+      width: 100vw;
+      height: 90px;
+      margin-bottom: 15%;   
+      background: none;
+      }
+    .footer{
+      display: flex;
+      flex-direction: column;     
+    } 
+    .footer img{
+      width: 80px; 
+      height: 30px;
+    }
+    .by{
+      font-size: 1.1rem;
+    }
+    .media{  
+      padding-left: 2em;  
+      color: white;
+      display: flex;
+      flex-direction: column;       
+    }
+    .media p{
+      font-size: 1.1rem;
+     margin:0;    
+    }
+    .container h1{
+      text-transform: uppercase;
+      font-size: 35px;
+      font-family: 'Philosopher', sans-serif;
+      margin-top: 25%;
+      letter-spacing: 2px;
+    }
+    .container h2{
+      margin: 0;
+      font-family: 'Philosopher', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      font-style: oblique;
+    }
+    .count{
+      margin: 20px 0;
+    }
+    .countd{
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 2px solid;
+      margin: 0 10px;
+      font-size: 5px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    .countd span{
+      display: block;
+      font-size: 20px;
+      margin-top: 14px;
+    }
+    .prez{
+      font-family: 'Philosopher', sans-serif;   
+      color:white;
+      font-size: 18px;
+      text-align: center;
+      line-height: 25px;
+      
+    }
+  }
 
 }
-
