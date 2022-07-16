@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap');
+
 body,html{
   margin: 0;
   padding: 0;
@@ -8,14 +10,11 @@ body{
   background: url(platine1.jpg) 20% 50%;
    background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  
+  background-attachment: fixed;  
   background-size: cover;
-  font-family: "Montserrat",sans-serif;
-}
-.container{
   
+}
+.container{  
   height: 100%;
   width: 100%;
   position: absolute;
@@ -27,21 +26,21 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  
 
 }
 .container h1{
   text-transform: uppercase;
   font-size: 60px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Philosopher', sans-serif;
   margin: 0px;
   letter-spacing: 10px;
 }
 .container h2{
   margin: 0;
+  font-family: 'Philosopher', sans-serif;
   font-size: 20px;
   font-weight: 500;
+  font-family: Georgia,  serif;  
   font-style: oblique;
 }
 .count{
@@ -63,19 +62,16 @@ body{
   margin-top: 14px;
 }
 
-footer{
- 
+footer{ 
   width: 100%;
   height: 80px;
   background: rgba(0,0,0,0.5);
   color: white;
-  text-align: center;
-  
+  text-align: center;  
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 .logo { 
   padding-left: 8px;
@@ -105,10 +101,88 @@ footer{
 .media{
   display: flex;
   flex-direction: row;
-  align-items: center;
- 
-  
- 
- 
-  
+  align-items: center;  
 }
+
+@media screen and (min-width: 340px)and (max-width: 768px){
+
+  .container{  
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 2%;  
+  }
+  .footer img{
+    width: 80px;
+    height: 30px;
+  }
+
+  .by{
+    font-size: 14px;
+  }
+
+  .media{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;    
+    align-items: center;  
+  }
+  .container h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Philosopher', sans-serif;
+    margin: 0px;
+    letter-spacing: 10px;
+  }
+  .container h2{
+    margin: 0;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: oblique;
+  }
+  .count{
+    margin: 20px 0;
+  }
+  .countd{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid;
+    margin: 0 10px;
+    font-size: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .countd span{
+    display: block;
+    font-size: 20px;
+    margin-top: 14px;
+  }
+  .prez{
+    font-family: 'Philosopher', sans-serif;
+   
+    color:white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    
+  }
+
+}
+
